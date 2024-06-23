@@ -1,0 +1,32 @@
+@baseurl = https://8080-gurincha-listalivros-2u594r7a9c4.ws-us114.gitpod.io
+
+###
+GET {{baseurl}}/autor
+
+###
+POST {{baseurl}}/autor
+Content-Type: application/json
+
+{
+    "nome": "J. R. R. Tolkien",
+    "nacionalidade": ""
+}
+###
+POST {{baseurl}}/autor
+Content-Type: application/json
+
+{
+    "nome": "Antoine de Saint-Exupéry",
+    "nacionalidade": ""
+}
+###
+POST {{baseurl}}/autor
+Content-Type: application/json
+
+{
+    "nome": "Sarah J. Maas",
+    "nacionalidade": ""
+}
+
+###
+DELETE {{baseurl}}/autor/2

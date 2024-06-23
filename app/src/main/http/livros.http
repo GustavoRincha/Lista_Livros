@@ -1,0 +1,38 @@
+@baseurl = https://8080-gurincha-listalivros-2u594r7a9c4.ws-us114.gitpod.io
+
+###
+GET {{baseurl}}/livros
+
+###
+POST {{baseurl}}/livros
+Content-Type: application/json
+
+{
+    "titulo":"O Senhor dos Anéis",
+    "autor":"J. R. R. Tolkien",
+    "genero":"Literatura fantástica, Alta fantasia, Ficção de aventura, Romance de cavalaria, Fantasia heroica",
+    "categoria": {"id": 1}
+}
+###
+POST {{baseurl}}/livros
+Content-Type: application/json
+
+{
+    "titulo":"O Pequeno Príncipe",
+    "autor":"Antoine de Saint-Exupéry",
+    "genero":"Literatura infantil, Novela, Fábula, Ficção especulativa",
+    "categoria": {"id": 1}
+}
+###
+POST {{baseurl}}/livros
+Content-Type: application/json
+
+{
+    "titulo":"Trono de Vidro",
+    "autor":"Sarah J. Maas",
+    "genero":"Literatura fantástica, Romance, Fantasia romântica, Alta fantasia",
+    "categoria": {"id": 1}
+}
+
+###
+DELETE https://8080-Gurincha-springwikiap-d7karjvwtxc.ws-us114.gitpod.io/obras/3

@@ -1,0 +1,33 @@
+@baseurl = https://8080-gurincha-listalivros-2u594r7a9c4.ws-us114.gitpod.io
+
+###
+GET {{baseurl}}/preco
+
+###
+POST {{baseurl}}/preco
+Content-Type: application/json
+
+{
+    "preco": "R$150,00",
+    "local_de_compra": "Amazon"
+}
+
+###
+POST {{baseurl}}/preco
+Content-Type: application/json
+
+{
+    "preco": "R$70,00",
+    "local_de_compra": "Amazon"
+}
+
+POST {{baseurl}}/preco
+Content-Type: application/json
+
+{
+    "preco": "R$200,00",
+    "local_de_compra": "Saraiva"
+
+}
+###
+DELETE {{baseurl}}/preco/2
